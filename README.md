@@ -14,7 +14,7 @@ Figure taken from [paper](https://arxiv.org/pdf/2305.10699.pdf).
 
 ## Usage
 
-This implementation provides example notebooks for training evaluation DDSM models for Bin-MNIST and MNIST data. In these notebooks you can simply load our provided configs train or retrain your models with them as follow.
+This implementation provides example notebooks for training and evaluation of DDSM models for Bin-MNIST and MNIST data. In these notebooks you can simply load our provided configs adn start training or retraining your models with them as follows:
 
 ```python
 import os
@@ -52,10 +52,10 @@ if train_resume:
     config.saving.checkpoint_freq = 1000
 
 ```
-Further, I provide a notebook to presample noise and speed up the computation.
+Further, I provided a notebook to presample noise and speed up the computation.
 
 ## Note
-I additionally included the U-Net model from paper [Dirichlet Diffusion Score Model for Biological Sequence Generation](https://arxiv.org/pdf/2107.03006.pdf) which could be more suitable to the MNIST data.
+I additionally included the U-Net model from paper [Structured Denoising Diffusion Models in Discrete State-Spaces](https://arxiv.org/pdf/2107.03006.pdf) which could be more suitable to the MNIST dataset.
 
 ## Reference
 
