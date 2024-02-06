@@ -7,7 +7,7 @@ paper [Dirichlet Diffusion Score Model for Biological Sequence Generation](https
 by Avdeyev et al.
 
 <p align="center">
-  <img src="ddsm.webp"  alt="1" width = 320px height = 257px >
+  <img src="ddsm.webp"  alt="1" width = 640px height = 514px >
 </p>
 
 Figure taken from [paper](https://arxiv.org/pdf/2305.10699.pdf).
