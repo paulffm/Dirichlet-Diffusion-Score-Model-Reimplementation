@@ -55,7 +55,7 @@ if train_resume:
 Further, I provide a notebook to presample noise and speed up the computation.
 
 ## Note
-I additionally included the U-Net model from paper paper [Dirichlet Diffusion Score Model for Biological Sequence Generation](https://arxiv.org/pdf/2107.03006.pdf) which could be more suitable to the MNIST data.
+I additionally included the U-Net model from paper [Dirichlet Diffusion Score Model for Biological Sequence Generation](https://arxiv.org/pdf/2107.03006.pdf) which could be more suitable to the MNIST data.
 
 ## Reference
 
