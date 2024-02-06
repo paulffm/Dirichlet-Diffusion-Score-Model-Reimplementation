@@ -1,6 +1,6 @@
 # Dirichlet Diffusion Score Model for Biological Sequence 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ChristophReich1996/MaxViT/blob/master/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/paulffm/Dirichlet-Diffusion-Score-Model-Reimplementation/blob/main/LICENSE)
 
 Unofficial **PyTorch** reimplementation of the
 paper [Dirichlet Diffusion Score Model for Biological Sequence Generation](https://arxiv.org/pdf/2305.10699.pdf)
