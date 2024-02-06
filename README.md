@@ -7,7 +7,7 @@ paper [Dirichlet Diffusion Score Model for Biological Sequence Generation](https
 by Avdeyev et al.
 
 <p align="center">
-  <img src="maxvit.png"  alt="1" width = 674px height = 306px >
+  <img src="ddsm.webp"  alt="1" width = 674px height = 306px >
 </p>
 
 Figure taken from [paper](https://arxiv.org/pdf/2305.10699.pdf).
@@ -52,7 +52,10 @@ if train_resume:
     config.saving.checkpoint_freq = 1000
 
 ```
-In addition it provides a notebook to presample noise and speed up the computation.
+Further, I provide a notebook to presample noise and speed up the computation.
+
+## Note
+I additionally included the U-Net model from paper paper [[Dirichlet Diffusion Score Model for Biological Sequence Generation](https://arxiv.org/pdf/2107.03006.pdf)](https://arxiv.org/pdf/2107.03006.pdf) which could be more suitable to the MNIST data.
 
 ## Reference
 
