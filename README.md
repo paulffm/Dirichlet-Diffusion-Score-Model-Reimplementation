@@ -1,4 +1,4 @@
-# DDSM
+# Dirichlet Diffusion Score Model for Biological Sequence 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ChristophReich1996/MaxViT/blob/master/LICENSE)
 
