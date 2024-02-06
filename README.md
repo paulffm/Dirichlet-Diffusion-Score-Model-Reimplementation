@@ -54,30 +54,6 @@ if train_resume:
 ```
 In addition it provides a notebook to presample noise and speed up the computation.
 
-To accesses the named weights of the network which are not recommended being used with weight decay
-call `nwd: Set[str] = network.no_weight_decay()`.
-
-In case you want to use a custom configuration you can use the `MaxViT` class. The constructor method takes the
-following parameters.
-
-| Parameter | Description | Type |
-| ------------- | ------------- | ------------- |
-| in_channels | Number of input channels to the convolutional stem. Default 3 | int, optional |
-| depths | Depth of each network stage. Default (2, 2, 5, 2) | Tuple[int, ...], optional |
-| channels | Number of channels in each network stage. Default (64, 128, 256, 512) | Tuple[int, ...], optional |
-| num_classes | Number of classes to be predicted. Default 1000 | int, optional |
-| embed_dim | Embedding dimension of the convolutional stem. Default 64 | int, optional |
-| num_heads | Number of attention heads. Default 32 | int, optional |
-| grid_window_size | Grid/Window size to be utilized. Default (7, 7) | Tuple[int, int], optional |
-| attn_drop | Dropout ratio of attention weight. Default: 0.0 | float, optional |
-| drop | Dropout ratio of output. Default: 0.0 | float, optional |
-| drop_path | Dropout ratio of path. Default: 0.0 | float, optional |
-| mlp_ratio | Ratio of mlp hidden dim to embedding dim. Default: 4.0 | float, optional |
-| act_layer | Type of activation layer to be utilized. Default: nn.GELU | Type[nn.Module], optional |
-| norm_layer | Type of normalization layer to be utilized. Default: nn.BatchNorm2d | Type[nn.Module], optional |
-| norm_layer_transformer | Normalization layer in Transformer. Default: nn.LayerNorm | Type[nn.Module], optional |
-| global_pool | Global polling type to be utilized. Default "avg" | str, optional |
-
 ## Reference
 
 ```bibtex
