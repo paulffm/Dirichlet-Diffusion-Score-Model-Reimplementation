@@ -52,7 +52,7 @@ if train_resume:
     config.saving.checkpoint_freq = 1000
 
 ```
-Further, I provided a notebook to presample noise and speed up the computation.
+Further, I provided a [notebook](https://github.com/paulffm/Dirichlet-Diffusion-Score-Model-Reimplementation/blob/main/presample_noise.ipynb) to presample noise and speed up the computation.
 
 ## Note
 I additionally included the U-Net model from paper [Structured Denoising Diffusion Models in Discrete State-Spaces](https://arxiv.org/pdf/2107.03006.pdf) which could be more suitable to the MNIST dataset.
