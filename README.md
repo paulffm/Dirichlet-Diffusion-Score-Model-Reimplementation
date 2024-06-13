@@ -14,7 +14,7 @@ Figure taken from [paper](https://arxiv.org/pdf/2305.10699.pdf).
 
 ## Usage
 
-This implementation provides example notebooks for training and evaluation of DDSM models for Bin-MNIST and MNIST data. In these notebooks you can simply load our provided configs adn start training or retraining your models with them as follows:
+This implementation provides example notebooks for training and evaluation of DDSM models for Bin-MNIST and MNIST data. In these notebooks you can simply load our provided configs and start training or retraining your models with them as follows:
 
 ```python
 import os
@@ -52,6 +52,54 @@ if train_resume:
     config.saving.checkpoint_freq = 1000
 
 ```
+A configuration file tailored for generating MNIST data with a U-Net includes the following parameters:
+
+| Parameter                       | Description                                                                  | Type    |
+| ------------------------------- | ---------------------------------------------------------------------------- | ------- |
+| num_cat                         | Number of categories                                                         | int     |
+| n_time_steps                    | Number of time steps                                                         | int     |
+| random_order                    | Whether to use random order                                                  | bool    |
+| device                          | Device to be used for training                                               | str     |
+| speed_balanced                  | Whether to use speed balanced training                                       | bool    |
+| use_fast_diff                   | Whether to use fast diffusion                                                | bool    |
+| loss                            | Loss configuration                                                           | ConfigDict |
+| training.n_iter                 | Number of training iterations                                                | int     |
+| training.validation_freq        | Frequency of validation                                                      | int     |
+| data.batch_size                 | Batch size used for training                                                 | int     |
+| data.image_size                 | Size of the input images                                                     | int     |
+| data.num_cat                    | Number of categories in the data                                             | int     |
+| data.shape                      | Shape of the data                                                            | tuple   |
+| data.use_augmentation           | Whether to use data augmentation                                             | bool    |
+| data.num_workers                | Number of workers for data loading                                           | int     |
+| data.name                       | Name of the dataset                                                          | str     |
+| model.ch                        | Number of channels in the model                                              | int     |
+| model.num_res_blocks            | Number of residual blocks                                                    | int     |
+| model.attn                      | Attention settings                                                           | list[int]|
+| model.ch_mult                   | Channel multipliers                                                          | list[int]|
+| model.dropout                   | Dropout rate                                                                 | float   |
+| optimizer.lr                    | Learning rate for the optimizer                                              | float   |
+| optimizer.weight_decay          | Weight decay for the optimizer                                               | float   |
+| sampler.sampler_freq            | Frequency of sampling                                                        | int     |
+| sampler.n_samples               | Number of samples to generate                                                | int     |
+| saving.checkpoint_freq          | Frequency of saving checkpoints                                              | int     |
+| saving.checkpoint_path          | Path to save checkpoints                                                     | str     |
+| saving.time_dep_weights_path    | Path to save time-dependent weights                                          | str     |
+| saving.sample_plot_path         | Path to save sample plots                                                    | str     |
+| saving.save_location            | General save location                                                        | str     |
+| loading.diffusion_weights_path  | Path to load diffusion weights                                               | str     |
+| loading.time_dep_weights_path   | Path to load time-dependent weights                                          | str     |
+| loading.dataset_path            | Path to the dataset                                                          | str     |
+| noise_sample.n_samples          | Number of noise samples                                                      | int     |
+| noise_sample.num_cat            | Number of categories in the noise samples                                    | int     |
+| noise_sample.n_time_steps       | Number of time steps for noise sampling                                      | int     |
+| noise_sample.speed_balance      | Whether to use speed balance for noise sampling                              | bool    |
+| noise_sample.max_time           | Maximum time for noise sampling                                              | float   |
+| noise_sample.out_path           | Output path for noise samples                                                | str     |
+| noise_sample.order              | Order of noise samples                                                       | int     |
+| noise_sample.steps_per_tick     | Number of steps per tick                                                     | int     |
+| noise_sample.mode               | Mode for noise sampling ('path' or 'independent')                            | str     |
+| noise_sample.logspace           | Whether to use logspace for noise sampling                                   | bool    |
+
 Further, I provided a [notebook](https://github.com/paulffm/Dirichlet-Diffusion-Score-Model-Reimplementation/blob/main/presample_noise.ipynb) to presample noise and speed up the computation.
 
 ## Note
