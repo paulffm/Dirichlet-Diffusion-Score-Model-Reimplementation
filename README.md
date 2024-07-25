@@ -7,7 +7,7 @@ paper [Dirichlet Diffusion Score Model for Biological Sequence Generation](https
 by Avdeyev et al. This implementation includes several extensions, such as higher-order sampling methods and applications to various datasets, including protein sequences and MNIST.
 
 <p align="center">
-  <img src="ddsm.webp"  alt="1" width = 581px height = 467px >
+  <img src="ddsm.webp"  alt="1" width = 579px height = 464px >
 </p>
 
 Figure taken from [paper](https://arxiv.org/pdf/2305.10699.pdf).
