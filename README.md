@@ -1,4 +1,4 @@
-# Dirichlet Diffusion Score Model for Biological Sequence 
+# Dirichlet Diffusion Score Model for Biological Sequence Generation
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/paulffm/Dirichlet-Diffusion-Score-Model-Reimplementation/blob/main/LICENSE)
 
