@@ -4,7 +4,7 @@
 
 Unofficial **PyTorch** reimplementation of the
 paper [Dirichlet Diffusion Score Model for Biological Sequence Generation](https://arxiv.org/pdf/2305.10699.pdf)
-by Avdeyev et al. This implementation includes several extensions, such as higher-order sampling methods and applications to various datasets, including protein sequences and MNIST.
+by Avdeyev et al. This implementation includes several extensions, such as customized network architectures and applications to various datasets, including protein sequences and MNIST.
 
 <p align="center">
   <img src="ddsm.webp"  alt="1" width = 579px height = 464px >
